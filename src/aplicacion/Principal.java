@@ -18,8 +18,14 @@ public class Principal {
         Matematicas.generarStreams();
 
         List<Integer> listaNumeros = Arrays.asList(1, 2, 3, 4, 5);
-        int sumaLista = Matematicas.sumaLista(listaNumeros);
-        System.out.println("\nEjercicio 15: Suma de la lista " + listaNumeros + " es " + sumaLista);
+        List<Integer> lista2 = Arrays.asList(1, 2, 3, 4, 5);
+        
+        System.out.println("1. Suma: " + Matematicas.suma(10));
+        System.out.println("2. Factorial: " + Matematicas.factorial(5));
+        System.out.println("3. Potencia: " + Matematicas.potencia(2, 3));
+     
+        System.out.println("10. lista de los primeros números pares hasta n => que 2 es " + Matematicas.listaDeSoloPar(10));
+        System.out.println("11. Producto escalar de dos listas de números no vacías y del mismo tamaño es " + Matematicas.listaDeSoloPar(10));
 
         System.out.println("\nEjercicio 16: Integral de e^(x^2) con Streams");
         double resultadoIntegralStreams = Matematicas.integralConStreams(0, 1, 0.1, x -> Math.exp(Math.pow(x, 2)));
