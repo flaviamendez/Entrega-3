@@ -26,7 +26,7 @@ public class Matematicas {
         return funcion.apply(a) * h + calcularIntegral(a + h, b, h, funcion);
     }
 
-    // Ejercicio 14: Generación de Streams
+    
     public static void generarStreams() {
         System.out.println("Stream usando of:");
         IntStream.of(1, 2, 3, 4, 5).forEach(System.out::println);
@@ -40,7 +40,6 @@ public class Matematicas {
         System.out.println("\nStream de números aleatorios:");
         new Random().ints(5, 0, 100).forEach(System.out::println);
     }
-
     // Ejercicio 15: Ejercicios del 1 - 12
     // Ejercicio 1 suma
     public static int suma(int n) {
